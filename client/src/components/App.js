@@ -25,8 +25,10 @@ class App extends Component {
 
   updatePokemonName = (name) => {
     // We need to create a new array, to guarantee React re-render + setState works consistently
+    let { clickedPokemon } = this.state;
     let pokemonList = [...this.state.pokemonList];
-    pokemonList[this.state.clickedPokemon].name = name;
+    pokemonList[clickedPokemon] = {...pokemonList[clickedPokemon]}; //creates new object so pokemonListItem knows when to smart rerender
+    pokemonList[clickedPokemon].name = name;
     this.setState({ pokemonList, clickPokemon: -1 });
   }
 
