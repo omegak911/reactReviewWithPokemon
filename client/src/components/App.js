@@ -19,12 +19,16 @@ class App extends Component {
     });
   }
 
+  clickPokemon = (index) => {
+    this.setState({ clickedPokemon: index });
+  }
+
   render(){
     let { pokemonList, clickedPokemon } = this.state;
     return (
       <div>
         <Search getPokemon={this.getPokemon}/>
-        <PokemonList pokemonList={this.state.pokemonList}/>
+        <PokemonList pokemonList={this.state.pokemonList} clickPokemon={this.clickPokemon}/>
       </div>
     )
   }
