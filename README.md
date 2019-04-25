@@ -71,7 +71,10 @@ Add css, you may use this as reference https://www.pokemon.com/us/pokedex/
 #### STEP 10: 
 On mount, render the original 151 pokemon, in the correct order
 
-#### STEP 11: 
+#### STEP 11:
+PokemonListItem should only re-render if an applicable change has occurred.  They should NOT all re-render on every unrelated change
+
+#### STEP 12: 
 Refactor application to use Redux or Context API instead of passing props down manually
 
 ### Solutions
