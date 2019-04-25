@@ -20,6 +20,17 @@ Get additional practice with React by creating a front end application that rend
   $ npm run build
 ```
 
+If you plan to redo this repo multiple times, make a new branch
+```
+  $ git checkout -b attempt1
+```
+
+When you are ready to try again, repeat as necessary
+```
+  $ git checkout master
+  $ git checkout -b attempt2
+```
+
 ### Steps
 At each step, before moving on, answer the following question: What justifies my expectation that I completed the requirement?  If you cannot justify this, then it means you haven't tested it yet.
 
@@ -62,6 +73,17 @@ On mount, render the original 151 pokemon, in the correct order
 
 #### STEP 11: 
 Refactor application to use Redux or Context API instead of passing props down manually
+
+### Solutions
+Once you are done with steps 1-7, solution code is available on branch solution1
+```
+  $ git checkout solution1
+```
+
+I've included some additional solution code and techniques on branch solution2.  Probably don't look at this until you have the basics down and have completed some/all of the advanced content
+```
+  $ git checkout solution2
+```
 
 ### Acknowledgments
  * https://pokeapi.co/ for their amazing API
