@@ -16,13 +16,14 @@ class Search extends Component {
   search = (e) => {
     e.preventDefault();
     this.props.getPokemon(this.state.query.toLowerCase())
+    this.setState({ query: '' });
   }
 
   render() {
     return (
       <div>
         <form action="" onSubmit={this.search}>
-          <input type="text" onChange={this.handleInput}/>
+          <input type="text" onChange={this.handleInput} value={this.state.query}/>
           <button type="submit">Add Pokemon</button>
         </form>
       </div>
