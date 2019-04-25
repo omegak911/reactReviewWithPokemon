@@ -11,10 +11,6 @@ class App extends Component {
     }
   }
 
-  componentDidMount() {
-    this.setState({ pokemonList: this.props.pokemonList })
-  }
-
   getPokemon = (query) => {
     this.props.getPokemon(query, ({ data }) => {
       let { id, name, sprites } = data;
