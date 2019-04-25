@@ -24,7 +24,7 @@ class Search extends Component {
       <div>
         <form action="" onSubmit={this.search}>
           <input type="text" onChange={this.handleInput} value={this.state.query}/>
-          <button type="submit">Add Pokemon</button>
+          <button type="submit">{this.props.button}</button>
         </form>
       </div>
     )
