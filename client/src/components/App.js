@@ -7,7 +7,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state ={
-      pokemonList: []
+      pokemonList: [],
+      clickedPokemon: -1
     }
   }
 
@@ -19,6 +20,7 @@ class App extends Component {
   }
 
   render(){
+    let { pokemonList, clickedPokemon } = this.state;
     return (
       <div>
         <Search getPokemon={this.getPokemon}/>
